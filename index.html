@@ -1,181 +1,121 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مركز الغريب سكان</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>نظام البلاغات - قسم المعامل</title>
+    
+    <!-- استدعاء خط كايرو الاحترافي من جوجل -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
-<!-- استدعاء خط Cairo من جوجل -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
-
-<style>
-body {
-    margin: 0;
-    font-family: 'Cairo', Tahoma, sans-serif; /* تغيير الخط لـ Cairo */
-    background: #f5f9ff;
-    color: #222;
-}
-
-header {
-    background: #0b74c9;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 35px;
-    font-weight: 700;
-}
-
-header p {
-    margin: 10px 0 0 0;
-    font-size: 18px;
-    opacity: 0.9;
-}
-
-nav {
-    background: #005fa3;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s ease; /* تأثير ناعم عند التمرير */
-}
-
-nav a:hover {
-    color: #bce0ff; /* تغيير اللون عند التمرير */
-}
-
-.hero {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.hero h2 {
-    color: #0b74c9;
-    font-size: 32px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-bottom: 25px;
-    color: #555;
-}
-
-button {
-    background: #0b74c9;
-    color: white;
-    padding: 12px 35px;
-    border: none;
-    border-radius: 25px; /* حواف دائرية أكثر عصرية */
-    font-size: 18px;
-    font-family: 'Cairo', sans-serif;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(11, 116, 201, 0.3);
-    transition: all 0.3s ease;
-}
-
-button:hover {
-    background: #005fa3;
-    transform: translateY(-2px); /* حركة خفيفة للأعلى عند التمرير */
-    box-shadow: 0 6px 20px rgba(11, 116, 201, 0.4);
-}
-
-.services {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px; /* استخدام gap أفضل للمسافات */
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.card {
-    background: white;
-    width: 280px;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* ظل أنعم وأخف */
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px); /* تفاعل للكروت عند مرور الماوس */
-}
-
-.card h3 {
-    color: #0b74c9;
-    margin-top: 0;
-}
-
-.card p {
-    color: #666;
-    margin-bottom: 0;
-}
-
-footer {
-    background: #0b74c9;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 60px;
-    font-size: 14px;
-}
-</style>
-
+    <style>
+        body {
+            font-family: 'Cairo', Tahoma, sans-serif;
+            background: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #0b6cb8, #1987d8);
+            color: #fff;
+            text-align: center;
+            padding: 30px 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            margin: 5px 0;
+        }
+        h1 { font-size: 24px; font-weight: 700; }
+        h2 { font-size: 18px; font-weight: 600; opacity: 0.9; }
+        h3 { font-size: 16px; font-weight: 400; opacity: 0.8; }
+        
+        .role {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            display: inline-block;
+            padding: 4px 15px;
+            border-radius: 20px;
+        }
+        .name {
+            font-size: 14px;
+            color: #e0f2fe;
+            margin-top: 8px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        /* تأثير عند تمرير الماوس على البطاقة */
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            opacity: 1;
+        }
+        .btn {
+            background: #0b6cb8;
+            color: #fff;
+            padding: 8px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+        /* تأثير عند تمرير الماوس على الزر */
+        .btn:hover {
+            background: #08538c;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1>مركز الغريب سكان</h1>
-    <p>للأشعة التشخيصية وأشعة الأسنان والوجه والفكين</p>
+    <h1>وزارة الصحة والسكان</h1>
+    <h2>إدارة الزقازيق الصحية</h2>
+    <h3>قسم المعامل</h3>
+    <div class="role">مسؤول التحول الرقمي</div>
+    <div class="name">أخصائي مختبرات / محمد محسن</div>
 </header>
 
-<nav>
-    <a href="#">الرئيسية</a>
-    <a href="#">الخدمات</a>
-    <a href="#">اتصل بنا</a>
-</nav>
-
-<section class="hero">
-    <h2>أهلاً بكم في مركز الغريب سكان</h2>
-    <p>دقة - سرعة - جودة في خدمات الأشعة</p>
-    <button>احجز الآن</button>
-</section>
-
-<section class="services">
+<div class="container">
     <div class="card">
-        <h3>الأشعة الرقمية DR</h3>
-        <p>جودة عالية ونتائج دقيقة وسريعة.</p>
+        <h3>📅 البلاغ اليومي</h3>
+        <button class="btn">تسجيل</button>
     </div>
-
     <div class="card">
-        <h3>أشعة الأسنان</h3>
-        <p>بانوراما - تقويم - ذروة بأحدث الأجهزة.</p>
+        <h3>🗓️ البلاغ الأسبوعي</h3>
+        <button class="btn">تسجيل</button>
     </div>
-
     <div class="card">
-        <h3>الأشعة المنزلية</h3>
-        <p>نصل إليك أينما كنت برعاية فائقة.</p>
+        <h3>📊 البلاغ الشهري</h3>
+        <button class="btn">تسجيل</button>
     </div>
-</section>
-
-<footer>
-    © 2026 مركز الغريب سكان - جميع الحقوق محفوظة
-</footer>
+</div>
 
 </body>
 </html>
