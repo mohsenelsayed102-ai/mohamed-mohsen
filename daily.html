@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>تسجيل البلاغ اليومي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; background: #f0f4f8; margin: 0; padding: 20px; }
+        .form-container { max-width: 600px; background: #fff; margin: 40px auto; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h2 { color: #0b6cb8; margin-top: 0; border-bottom: 2px solid #eef6ff; padding-bottom: 10px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: 600; color: #4a5568; }
+        input[type="text"], input[type="number"], input[type="date"], textarea { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+        .btn-submit { background: #0b6cb8; color: #fff; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; font-family: 'Cairo', sans-serif; width: 100%; font-size: 16px; }
+        .btn-submit:hover { background: #08538c; }
+        .back-link { display: inline-block; margin-bottom: 20px; color: #0b6cb8; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <a href="index.html" class="back-link">⬅️ العودة للرئيسية</a>
+    <h2>📅 نموذج البلاغ اليومي</h2>
+    <form>
+        <div class="form-group">
+            <label>التاريخ:</label>
+            <input type="date" required>
+        </div>
+        <div class="form-group">
+            <label>إجمالي عدد العينات المستلمة اليوم:</label>
+            <input type="number" placeholder="0" required>
+        </div>
+        <div class="form-group">
+            <label>عدد الحالات الإيجابية (إن وجدت):</label>
+            <input type="number" placeholder="0">
+        </div>
+        <div class="form-group">
+            <label>ملاحظات يومية عاجلة:</label>
+            <textarea rows="4" placeholder="اكتب أي ملاحظات أو نواقص هنا..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">حفظ وإرسال البلاغ اليومي</button>
+    </form>
+</div>
+
+</body>
+</html>
