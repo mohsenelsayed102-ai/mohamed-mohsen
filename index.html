@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>نظام البلاغات - قسم المعامل</title>
     
-    <!-- استدعاء خط كايرو الاحترافي من جوجل -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
@@ -25,9 +24,7 @@
             padding: 30px 15px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        h1, h2, h3 {
-            margin: 5px 0;
-        }
+        h1, h2, h3 { margin: 5px 0; }
         h1 { font-size: 24px; font-weight: 700; }
         h2 { font-size: 18px; font-weight: 600; opacity: 0.9; }
         h3 { font-size: 16px; font-weight: 400; opacity: 0.8; }
@@ -42,9 +39,10 @@
             border-radius: 20px;
         }
         .name {
-            font-size: 14px;
+            font-size: 15px;
             color: #e0f2fe;
             margin-top: 8px;
+            font-weight: 600;
         }
         .container {
             max-width: 800px;
@@ -62,7 +60,6 @@
             align-items: center;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        /* تأثير عند تمرير الماوس على البطاقة */
         .card:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 15px rgba(0,0,0,0.1);
@@ -82,11 +79,8 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 14px;
-            border: none;
-            cursor: pointer;
             transition: background 0.2s ease;
         }
-        /* تأثير عند تمرير الماوس على الزر */
         .btn:hover {
             background: #08538c;
         }
@@ -99,21 +93,21 @@
     <h2>إدارة الزقازيق الصحية</h2>
     <h3>قسم المعامل</h3>
     <div class="role">مسؤول التحول الرقمي</div>
-    <div class="name">أخصائي مختبرات / محمد محسن</div>
+    <div class="name">عمك وعم العالم / محسن السيد</div>
 </header>
 
 <div class="container">
     <div class="card">
         <h3>📅 البلاغ اليومي</h3>
-        <button class="btn">تسجيل</button>
+        <a href="daily.html" class="btn">تسجيل</a>
     </div>
     <div class="card">
         <h3>🗓️ البلاغ الأسبوعي</h3>
-        <button class="btn">تسجيل</button>
+        <a href="weekly.html" class="btn">تسجيل</a>
     </div>
     <div class="card">
         <h3>📊 البلاغ الشهري</h3>
-        <button class="btn">تسجيل</button>
+        <a href="monthly.html" class="btn">تسجيل</a>
     </div>
 </div>
 
