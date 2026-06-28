@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مركز الغريب سكان</title>
+
+<style>
+body{
+margin:0;
+font-family:Tahoma;
+background:#f5f9ff;
+color:#222;
+}
+
+header{
+background:#0b74c9;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:40px;
+}
+
+nav{
+background:#005fa3;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:15px;
+font-size:18px;
+}
+
+.hero{
+padding:60px;
+text-align:center;
+}
+
+.hero h2{
+color:#0b74c9;
+font-size:35px;
+}
+
+button{
+background:#0b74c9;
+color:white;
+padding:15px 30px;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+}
+
+.services{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+padding:30px;
+}
+
+.card{
+background:white;
+width:260px;
+margin:15px;
+padding:20px;
+border-radius:15px;
+box-shadow:0 0 10px #ccc;
+text-align:center;
+}
+
+footer{
+background:#0b74c9;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>مركز الغريب سكان</h1>
+<p>للأشعة التشخيصية وأشعة الأسنان والوجه والفكين</p>
+</header>
+
+<nav>
+<a href="#">الرئيسية</a>
+<a href="#">الخدمات</a>
+<a href="#">اتصل بنا</a>
+</nav>
+
+<section class="hero">
+<h2>أهلاً بكم في مركز الغريب سكان</h2>
+<p>دقة - سرعة - جودة في خدمات الأشعة.</p>
+
+<button>احجز الآن</button>
+</section>
+
+<section class="services">
+
+<div class="card">
+<h3>الأشعة الرقمية DR</h3>
+<p>جودة عالية ونتائج دقيقة.</p>
+</div>
+
+<div class="card">
+<h3>أشعة الأسنان</h3>
+<p>بانوراما - تقويم - ذروة.</p>
+</div>
+
+<div class="card">
+<h3>الأشعة المنزلية</h3>
+<p>نصل إليك أينما كنت.</p>
+</div>
+
+</section>
+
+<footer>
+
+© 2026 مركز الغريب سكان - جميع الحقوق محفوظة
+
+</footer>
+
+</body>
+</html>
